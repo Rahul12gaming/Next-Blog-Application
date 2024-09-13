@@ -12,6 +12,7 @@ Blog Post Details: View individual blog post details, including title, content, 
 
 Responsive Design: The website is fully responsive, ensuring a great user experience on desktop, tablet, and mobile devices.
 
+![chrome-capture-2024-9-11](https://github.com/user-attachments/assets/37eb548d-b9f0-42b9-b824-433c29274b9a)
 
 Getting Started
 
