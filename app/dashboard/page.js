@@ -1,11 +1,22 @@
-"use client";
+'use client'
 import { MdError } from "react-icons/md";
 import { BlogCard } from "../components/BlogCard";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 export default function Dashboard() {
 
  
-    const BlogData = window!=='undefined'?JSON.parse(window.localStorage.getItem("bolg")):[];
+    const [BlogData,setData]=useState()
+    useEffect(()=>{
+        if (typeof window !== "undefined") {
+                const data = JSON.parse(localStorage.getItem("bolg"))||[];
+                console.log(data);
+                
+                setData(data)
+                console.table(BlogData)
+          }
+
+    },[])
  
 
   return (
